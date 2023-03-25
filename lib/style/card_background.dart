@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class CardBackgrounds {
   CardBackgrounds._();
@@ -7,6 +8,15 @@ class CardBackgrounds {
     width: double.maxFinite,
     height: double.maxFinite,
     color: Color(0xff0B0B0F),
+    child: Stack(children: [
+              Positioned(
+                  top:100,
+                  right:200,
+                  child: SvgPicture.asset(
+                    'images/card_bg.svg',
+                    color: Colors.grey.withOpacity(0.5),
+                  )),
+    ]),
   );
 
   static Widget white = Container(
@@ -20,6 +30,15 @@ class CardBackgrounds {
       width: double.maxFinite,
       height: double.maxFinite,
       color: Color(color),
+       child: Stack(children: [
+              Positioned(
+                  top:100,
+                  right:200,
+                  child: SvgPicture.asset(
+                    'images/card_bg.svg',
+                    color: Colors.grey.withOpacity(0.5),
+                  )),
+    ]),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class CardFrontLayout {
   String bankName;
@@ -49,13 +50,7 @@ class CardFrontLayout {
               Container(
                 height: 30,
                 child: Center(
-                  child: Text(
-                    bankName,
-                    style: TextStyle(
-                        color: textColor,
-                        fontSize: 17,
-                        fontWeight: FontWeight.w500),
-                  ),
+                  child: SvgPicture.asset('images/nohash_horizontal.svg'),
                 ),
               ),
               if(isContactless ?? true)

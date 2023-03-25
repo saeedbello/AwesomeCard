@@ -11,9 +11,9 @@ class CardBackgrounds {
     child: Stack(children: [
               Positioned(
                   top:100,
-                  right:200,
+                  left:200,
                   child: SvgPicture.asset(
-                    'images/card_bg.svg',
+                    'assets/card_bg.svg',package: 'awesome_card',
                     color: Colors.grey.withOpacity(0.5),
                   )),
     ]),

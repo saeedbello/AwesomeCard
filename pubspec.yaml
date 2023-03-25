@@ -11,6 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^1.1.6
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -26,6 +27,10 @@ flutter:
   assets:
     - images/
     - images/card_provider/
+    - assets/card_bg.svg
+    - images/card_provider/
+    - assets/nokash.png
+    - assets/nokash_horizontal.svg
   #
   # For details regarding assets in packages, see
   # https://flutter.dev/assets-and-images/#from-packages

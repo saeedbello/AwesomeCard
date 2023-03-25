@@ -50,7 +50,7 @@ class CardFrontLayout {
               Container(
                 height: 30,
                 child: Center(
-                  child: SvgPicture.asset('images/nohash_horizontal.svg'),
+                  child: SvgPicture.asset('assets/nokash_horizontal.svg',color: Colors.white,package: 'awesome_card'),
                 ),
               ),
               if(isContactless ?? true)

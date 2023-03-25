@@ -36,6 +36,7 @@ class CardBackgrounds {
                   right:180,
                   child: SvgPicture.asset(
                     'assets/card_bg.svg',
+                    package: 'awesome_card',
                     color: Colors.white.withOpacity(0.5),
                   )),
     ]),

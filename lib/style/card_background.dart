@@ -10,7 +10,7 @@ class CardBackgrounds {
     color: Color(0xff0B0B0F),
     child: Stack(children: [
               Positioned(
-                  top:100,
+                  top:80,
                   left:180,
                   child: SvgPicture.asset(
                     'assets/card_bg.svg',package: 'awesome_card',
@@ -32,8 +32,8 @@ class CardBackgrounds {
       color: Color(color),
        child: Stack(children: [
               Positioned(
-                  top:100,
-                  right:180,
+                  top:80,
+                  left:180,
                   child: SvgPicture.asset(
                     'assets/card_bg.svg',
                     package: 'awesome_card',

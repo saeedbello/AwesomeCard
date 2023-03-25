@@ -11,10 +11,10 @@ class CardBackgrounds {
     child: Stack(children: [
               Positioned(
                   top:100,
-                  left:200,
+                  left:180,
                   child: SvgPicture.asset(
                     'assets/card_bg.svg',package: 'awesome_card',
-                    color: Colors.grey.withOpacity(0.5),
+                    color: Colors.white.withOpacity(0.5),
                   )),
     ]),
   );
@@ -33,10 +33,10 @@ class CardBackgrounds {
        child: Stack(children: [
               Positioned(
                   top:100,
-                  right:200,
+                  right:180,
                   child: SvgPicture.asset(
-                    'images/card_bg.svg',
-                    color: Colors.grey.withOpacity(0.5),
+                    'assets/card_bg.svg',
+                    color: Colors.white.withOpacity(0.5),
                   )),
     ]),
     );

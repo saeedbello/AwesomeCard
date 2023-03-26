@@ -10,7 +10,7 @@ class CardFrontLayout {
   double? cardWidth;
   double? cardHeight;
   Color? textColor;
-
+  Widget? cardBalance;
   String? textExpDate;
   String? textName;
   String? textExpiry;
@@ -25,6 +25,7 @@ class CardFrontLayout {
     this.textExpDate = 'Exp. Date',
     this.textExpiry = 'MM/YY',
     this.textName = 'Card Holder',
+    this.cardBalance = const SizedBox(),
     required this.mask,
     this.cardTypeIcon,
     this.cardWidth = 0,
@@ -78,6 +79,10 @@ class CardFrontLayout {
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
+                      cardBalance!,
+                      SizedBox(
+                        height: 15,
+                      ),
                       Text(
                         cardNumber == null || cardNumber!.isEmpty
                             ? mask

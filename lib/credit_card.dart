@@ -24,7 +24,7 @@ class CreditCard extends StatefulWidget {
   final double? width;
   final double? height;
   final bool? isContactless;
-
+  final Widget? cardBalance;
   final String? textExpDate;
   final String? textName;
   final String? textExpiry;
@@ -55,6 +55,7 @@ class CreditCard extends StatefulWidget {
     this.mask,
     this.horizontalMargin = 20,
     this.isContactless = true,
+    this.cardBalance = const SizedBox()
   }) : super(key: key);
 
   @override
@@ -175,6 +176,7 @@ class _CreditCardState extends State<CreditCard>
                   cardNumber: widget.cardNumber,
                   cardExpiry: widget.cardExpiry,
                   cardHolderName: widget.cardHolderName,
+                  cardBalance: widget.cardBalance,
                   cardTypeIcon: getCardTypeIcon(
                       cardType: widget.cardType, cardNumber: widget.cardNumber),
                   cardHeight: cardHeight,

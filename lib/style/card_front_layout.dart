@@ -127,7 +127,7 @@ class CardFrontLayout {
                         ],
                       ),
                       SizedBox(
-                        height: 15,
+                        height: 5,
                       ),
                       Row(
                         children: <Widget>[
